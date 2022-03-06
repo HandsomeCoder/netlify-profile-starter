@@ -5,6 +5,8 @@ import { ProfileService } from './services/profile/profile.service';
 import { RestCounterService } from './utility/rest_counter/rest-counter.service';
 import { I18nService } from './services/i18n/i18n.service';
 
+import { environment } from './../environments/environment';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,9 +15,9 @@ import { I18nService } from './services/i18n/i18n.service';
 export class AppComponent implements OnInit {
   title = 'profile-starter';
 
-  private basePath: string = "data/";
-	private profilePath: string = this.basePath + "profile_info.json";
-	private i18nKeyStorePath: string = this.basePath + "i18n_keystore.json";
+  private basePath: string = environment.basePath;
+	private profilePath: string = this.basePath + environment.profilePath;
+	private i18nKeyStorePath: string = this.basePath + environment.i18nKeyStorePath;
 
   public basicInfo: any;
   public contactInfo: any;
