@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run start --workspace=client",
     "build": "npm run build --workspace=client && copyfiles -a ./actions/**/*js dist"
   },
   "workspaces": [
