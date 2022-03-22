@@ -2,9 +2,9 @@
     "basic_info": {
         "image": "profile-pic.jpg",
         "name": {
-            "first_name": "Harsh",
-            "middle_name": "M.",
-            "last_name": "Shah",
+            "first_name": "Lorem ",
+            "middle_name": "elit",
+            "last_name": "Ipsum",
             "order": [
                 "first_name",
                 "middle_name",
@@ -18,11 +18,11 @@
     },
     "contact_info": {
         "phone_no": {
-            "value": "+1 (902) 412-8065",
+            "value": "+1 (987) 654-3210",
             "emoji": "&#128222;"
         },
         "email_id": {
-            "value": "harshshah1295@gmail.com",
+            "value": "lorem.ipsum@gmail.com",
             "emoji": "&#128232;",
             "emoji_style": {
                 "font-size": "20px"
@@ -35,27 +35,27 @@
                 "data": [
                     {
                         "name": "LinkedIn",
-                        "url": "https://www.linkedin.com/in/handsomecoder/",
+                        "url": "",
                         "icon": "linkedin.svg"
                     },
                     {
                         "name": "GitHub",
-                        "url": "https://github.com/HandsomeCoder",
+                        "url": "",
                         "icon": "github.svg"
                     },
                     {
                         "name": "Wordpress",
-                        "url": "https://harshshah1295.wordpress.com/",
+                        "url": "",
                         "icon": "wordpress.svg"
                     },
                     {
                         "name": "Codechef",
-                        "url": "https://www.codechef.com/users/handsome_coder",
+                        "url": "",
                         "icon": "codechef.svg"
                     },
                     {
                         "name": "Hackerrank",
-                        "url": "https://www.hackerrank.com/handsome_coder?hr_r=1",
+                        "url": "",
                         "icon": "hackerrank.svg"
                     }
                 ]
@@ -66,88 +66,94 @@
                 "data": [
                     {
                         "name": "YouTube",
-                        "url": "https://www.youtube.com/channel/UCH9Nrh24y__GkstE4tl2QGw?view_as=subscriber",
+                        "url": "",
                         "icon": "youtube.svg"
                     },
                     {
                         "name": "Instagram",
-                        "url": "https://www.instagram.com/harsh_1295/",
+                        "url": "",
                         "icon": "instagram.svg"
                     },
                     {
                         "name": "Twitter",
-                        "url": "https://twitter.com/harshshah1295",
+                        "url": "",
                         "icon": "twitter.svg"
                     },
                     {
                         "name": "Facebook",
-                        "url": "https://www.facebook.com/HandsomeCoder",
+                        "url": "",
                         "icon": "facebook.svg"
                     }
                 ]
             }
         ]
     },
-    "skills_info": [
-        {
-            "title": "languages",
-            "labelKey": "languages",
-            "skills": [
-                {
-                    "name": "HTML5",
-                    "icon": "html5.svg",
-                    "percentage": 85,
-                    "size": "sm"
-                },
-                {
-                    "name": "CSS3",
-                    "icon": "css3.svg",
-                    "percentage": 85,
-                    "size": "sm"
-                },
-                {
-                    "name": "Angular",
-                    "icon": "angular.svg",
-                    "percentage": 80,
-                    "size": "sm"
-                },
-                {
-                    "name": "Javascript",
-                    "icon": "javascript.svg",
-                    "percentage": 85,
-                    "size": "sm"
-                },
-                {
-                    "name": "Typescript",
-                    "icon": "typescript.svg",
-                    "percentage": 80,
-                    "size": "sm"
-                },
-                {
-                    "name": "NodeJS",
-                    "icon": "nodejs.svg",
-                    "percentage": 80,
-                    "size": "sm"
-                }
-            ]
-        },
-        {
-            "title": "cloud_technologies",
-            "labelKey": "cloud_technologies",
-            "skills": [
-                {
-                    "name": "Google Cloud",
-                    "icon": "gcp.svg",
-                    "percentage": 40,
-                    "size": "sm"
-                }
-            ]
-        }
-    ],
-    "bio_info":{
-        "details": ["I am a backbencher who has accomplished a few things so far!",
-        "I have 3.5 years of product development and engineering experience.",
-        "I have worked as Facilitator of Google's Applied CS Skills in 2017, Lead of Google Developer Student Club in 2017 and Student Coordinator at CHARUSAT in 2017",
-        "Playing basketball and chess is my hobby. I have represented my previous Organization (TCS) in Inter-Organization Basketball Tournament and my undergrad University (CHARUSAT) twice in the All India University Basketball Tournament"]
+    "skills_info": {
+        "titleKey": "skills:",
+        "details": [
+            {
+                "title": "languages",
+                "labelKey": "languages",
+                "skills": [
+                    {
+                        "name": "HTML5",
+                        "icon": "html5.svg",
+                        "percentage": 85,
+                        "size": "sm"
+                    },
+                    {
+                        "name": "CSS3",
+                        "icon": "css3.svg",
+                        "percentage": 85,
+                        "size": "sm"
+                    },
+                    {
+                        "name": "Angular",
+                        "icon": "angular.svg",
+                        "percentage": 80,
+                        "size": "sm"
+                    },
+                    {
+                        "name": "Javascript",
+                        "icon": "javascript.svg",
+                        "percentage": 85,
+                        "size": "sm"
+                    },
+                    {
+                        "name": "Typescript",
+                        "icon": "typescript.svg",
+                        "percentage": 80,
+                        "size": "sm"
+                    },
+                    {
+                        "name": "NodeJS",
+                        "icon": "nodejs.svg",
+                        "percentage": 80,
+                        "size": "sm"
+                    }
+                ]
+            },
+            {
+                "title": "cloud_technologies",
+                "labelKey": "cloud_technologies",
+                "skills": [
+                    {
+                        "name": "Netlify",
+                        "icon": "netlify.svg",
+                        "percentage": 40,
+                        "size": "sm"
+                    }
+                ]
+            }
+        ]
+    },
+    "bio_info": {
+        "titleKey": "bio:",
+        "details": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quam dolor, gravida ac fermentum id, vestibulum ut sem. Curabitur sed odio in eros euismod imperdiet quis ac erat. Aliquam accumsan dapibus ex, tincidunt egestas ligula sagittis sed.",
+            "Suspendisse pretium venenatis turpis in molestie.",
+            "Nulla pulvinar ac nulla ac sollicitudin. Sed molestie erat sit amet nibh sodales, ut laoreet urna laoreet. Donec consequat sapien nec ante malesuada, a auctor ante consequat.",
+            "Praesent vitae suscipit eros, ut cursus nibh. Ut non molestie lectus"
+        ]
     }
 }

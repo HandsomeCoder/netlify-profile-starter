@@ -12,7 +12,7 @@ export class SkillsInfoComponent implements OnInit {
     constructor() { }
 
     ngOnInit(): void {
-        for(let skills of this.data){
+        for(let skills of this.data.details){
             for(let skill of skills.skills){
                 skill["style"] = [];
                 skill["style"].push("c100");

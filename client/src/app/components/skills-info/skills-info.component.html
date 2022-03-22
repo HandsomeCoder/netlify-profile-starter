@@ -1,8 +1,8 @@
 <section>
     <section class="d-flex">
-        <h3 class="font-weight-bold"> Skills: </h3> 
+        <h3 class="font-weight-bold" [textContent]=" data.titleKey | i18n"></h3> 
     </section>
-    <section class="mt-4" *ngFor="let skills of data">
+    <section class="mt-4" *ngFor="let skills of data.details">
         <section class="text-center font-weight-bold">
             <span [textContent]="(skills.labelKey | i18n)+(' ('+skills.skills.length+')')"></span>
         </section>

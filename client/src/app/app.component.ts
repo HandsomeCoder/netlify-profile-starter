@@ -16,28 +16,28 @@ export class AppComponent implements OnInit {
   title = 'profile-starter';
 
   private basePath: string = environment.basePath;
-	private profilePath: string = this.basePath + environment.profilePath;
-	private i18nKeyStorePath: string = this.basePath + environment.i18nKeyStorePath;
+  private profilePath: string = this.basePath + environment.profilePath;
+  private i18nKeyStorePath: string = this.basePath + environment.i18nKeyStorePath;
 
   public basicInfo: any;
   public contactInfo: any;
   public skillsInfo: any;
   public bioInfo: any;
 
-  
+
   public isInitiated: boolean = false;
 
-	constructor(private http: HttpClient,
-		    private i18nService: I18nService,
-        private profileService: ProfileService,
-        private restCounterService: RestCounterService) {
-	}
+  constructor(private http: HttpClient,
+    private i18nService: I18nService,
+    private profileService: ProfileService,
+    private restCounterService: RestCounterService) {
+  }
 
   ngOnInit(): void {
     this.loadData()
   }
 
-  initiate(){
+  initiate() {
     this.basicInfo = this.profileService.get("basic_info");
     this.contactInfo = this.profileService.get("contact_info");
     this.skillsInfo = this.profileService.get("skills_info")
@@ -52,22 +52,21 @@ export class AppComponent implements OnInit {
 
     this.loadProfileInfo(counter);
     this.loadI18nKeyStore(counter);
-    }
+  }
 
-    public loadProfileInfo(counter: any) {
+  public loadProfileInfo(counter: any) {
     let component = this;
     this.http.get(this.profilePath).subscribe(data => {
-            component.profileService.init(data);
-            counter()
+      component.profileService.init(data);
+      counter()
     });
-    }
+  }
 
-    public loadI18nKeyStore(counter: any) {
+  public loadI18nKeyStore(counter: any) {
     let component = this;
     this.http.get(this.i18nKeyStorePath).subscribe(data => {
-            component.i18nService.init(data);
-            counter();
+      component.i18nService.init(data);
+      counter();
     });
-    }
-
+  }
 }
